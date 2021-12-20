@@ -68,11 +68,9 @@ export let loader: LoaderFunction = async ({ params }) => {
 
 export default function () {
   const show = useLoaderData<Show>();
-  const { podcastName } = useOutletContext();
 
   return (
     <section className="show-details">
-      <h3>{podcastName}</h3>
       <h1>
         #{show.number}: {show.title}
       </h1>

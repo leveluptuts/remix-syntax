@@ -45,7 +45,7 @@ export default function () {
             </ul>
           </nav>
         </aside>
-        <Outlet context={{ podcastName }} />
+        <Outlet />
       </section>
     </div>
   );
