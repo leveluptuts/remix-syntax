@@ -1,6 +1,6 @@
 import { Link, Outlet, useLoaderData } from "remix";
 import styles from "~/styles/syntax.css";
-import type { Show } from "./$show";
+import type { Show } from "./syntax/$show";
 import { padNumber } from "~/utils/pad";
 
 export function links() {
@@ -45,7 +45,7 @@ export default function () {
             </ul>
           </nav>
         </aside>
-        <Outlet />
+        <Outlet context={{ podcastName }} />
       </section>
     </div>
   );
